@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover high-quality outdoor business signs designed to boost visibility and brand recognition. Explore durable custom business signs perfect for Australian conditions.">
+  <meta name="keywords" content="outdoor business signs, custom business signs, business signs in Australia, storefront signage, commercial signs">
+  <meta name="author" content="Outdoor Business Signs">
+  <title>Outdoor Business Signs | Durable Custom Signage Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a365d;
+      --primary-light: #2c5282;
+      --accent: #ed8936;
+      --accent-hover: #dd6b20;
+      --bg: #f7fafc;
+      --text: #2d3748;
+      --text-light: #4a5568;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav a {
+      font-weight: 500;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(237, 137, 54, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+      color: var(--white);
+      padding: 5rem 0 4.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(237, 137, 54, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.85rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      opacity: 0.92;
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    /* Sections */
+    section {
+      padding: 4.5rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.25rem;
+      color: var(--primary);
+      margin-bottom: 0.85rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-header p {
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+
+    /* Intro / About */
+    .intro {
+      background: var(--white);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .intro-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .intro-text p {
+      margin-bottom: 1.15rem;
+      color: var(--text-light);
+    }
+
+    .intro-text p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .intro-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .intro-image img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    /* Features / Benefits */
+    .benefits {
+      background: var(--bg);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .benefit-card {
+      background: var(--white);
+      padding: 2rem 1.75rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .benefit-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #ebf4ff, #bee3f8);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.5rem;
+    }
+
+    .benefit-card h3 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 0.65rem;
+      font-weight: 600;
+    }
+
+    .benefit-card p {
+      color: var(--text-light);
+      font-size: 0.98rem;
+    }
+
+    /* Types */
+    .types {
+      background: var(--white);
+    }
+
+    .types-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .type-card {
+      display: flex;
+      gap: 1.35rem;
+      padding: 1.75rem;
+      background: var(--bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .type-card:hover {
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .type-number {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .type-card h3 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .type-card p {
+      color: var(--text-light);
+      font-size: 0.96rem;
+    }
+
+    /* Australia / Why */
+    .why-australia {
+      background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+      color: var(--white);
+    }
+
+    .why-australia .section-header h2 {
+      color: var(--white);
+    }
+
+    .why-australia .section-header p {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .why-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      padding: 2rem 1.75rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .why-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.7rem;
+      font-weight: 600;
+    }
+
+    .why-card p {
+      opacity: 0.9;
+      font-size: 0.98rem;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--bg);
+      text-align: center;
+    }
+
+    .cta-box {
+      background: var(--white);
+      padding: 3.5rem 2.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      max-width: 780px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .cta-box p {
+      color: var(--text-light);
+      margin-bottom: 1.75rem;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 3rem 0 1.75rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      color: var(--white);
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .footer-brand p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-width: 300px;
+    }
+
+    .footer-links h4 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.55rem;
+    }
+
+    .footer-links a {
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero-content,
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2.35rem;
+      }
+
+      .hero-image img,
+      .intro-image img {
+        height: 300px;
+      }
+
+      .benefits-grid,
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .types-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 3.5rem 0 3rem;
+      }
+
+      .hero h1 {
+        font-size: 1.95rem;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .benefits-grid,
+      .why-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header h2 {
+        font-size: 1.85rem;
+      }
+
+      .cta-box {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">Sign<span>Craft</span> Australia</a>
+      <nav>
+        <ul>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#types">Sign Types</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h1>Outdoor Business Signs That Command Attention</h1>
+          <p>Stand out from the competition with durable, weather-resistant outdoor signage designed to attract customers and reinforce your brand every day of the year.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn">Request Free Quote</a>
+            <a href="#types" class="btn btn-outline" style="border-color: rgba(255,255,255,0.6); color: #fff;">Explore Options</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="Professional outdoor business signs on a modern storefront" width="600" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <h2>Elevate Your Brand Presence with Premium Outdoor Signage</h2>
+          <p>Your outdoor sign is often the first interaction potential customers have with your business. A well-designed, highly visible sign communicates professionalism, builds trust, and guides people through your doors.</p>
+          <p>We specialise in <strong><a href="https://neonsnest.com.au/sign-types/">custom business signs</a></strong> that are engineered for longevity and impact. Whether you operate a retail storefront, restaurant, office, or industrial facility, the right outdoor signage becomes a silent salesperson working around the clock.</p>
+          <p>Across Australia’s diverse climates—from coastal humidity to inland heat—our materials and finishes are selected to withstand the elements while maintaining crisp colours and sharp lettering for years.</p>
+        </div>
+        <div class="intro-image">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80" alt="Attractive business signs displayed outside a commercial building" width="560" height="380">
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Invest in Quality Outdoor Business Signs?</h2>
+          <p>Strategic <u><a href="https://neonsnest.com.au/outdoor-signs/">outdoor signage</a></u> delivers measurable returns through increased foot traffic, stronger brand recall, and a polished professional image.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">👁️</div>
+            <h3>Maximum Visibility</h3>
+            <p>Large, bold designs and strategic placement ensure your message is seen by drivers and pedestrians from a distance, day or night.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h3>Weather-Resistant Materials</h3>
+            <p>UV-stable inks, marine-grade aluminium, and durable composites protect against sun, rain, wind, and temperature extremes.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🎨</div>
+            <h3>Fully Custom Designs</h3>
+            <p>Every sign is tailored to your brand colours, logo, and messaging so it feels uniquely yours and consistent across all locations.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">📈</div>
+            <h3>Proven Marketing ROI</h3>
+            <p>Studies show effective outdoor signs can increase walk-in traffic by over 30%. Your investment continues working long after installation.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🔧</div>
+            <h3>Professional Installation</h3>
+            <p>Expert fitting ensures structural integrity, correct height, and compliance with local council regulations and safety standards.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🌙</div>
+            <h3>Illumination Options</h3>
+            <p>LED channel letters, lightboxes, and halo lighting keep your brand visible after dark and enhance evening curb appeal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Types -->
+    <section class="types" id="types">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular Types of Outdoor Business Signs</h2>
+          <p>From classic fascia signs to modern illuminated displays, we offer solutions that suit every building style and marketing goal.</p>
+        </div>
+        <div class="types-grid">
+          <article class="type-card">
+            <div class="type-number">1</div>
+            <div>
+              <h3>Fascia & Storefront Signs</h3>
+              <p>The classic above-entrance sign that anchors your brand identity. Ideal for retail shops, cafes, and offices seeking a clean, professional look.</p>
+            </div>
+          </article>
+          <article class="type-card">
+            <div class="type-number">2</div>
+            <div>
+              <h3>Projecting / Blade Signs</h3>
+              <p>Mounted perpendicular to the building so they can be seen from both directions along the street—perfect for high-traffic pedestrian areas.</p>
+            </div>
+          </article>
+          <article class="type-card">
+            <div class="type-number">3</div>
+            <div>
+              <h3>Pylon & Monument Signs</h3>
+              <p>Freestanding structures that mark entrances to shopping centres, industrial parks, or multi-tenant sites with high visibility from the road.</p>
+            </div>
+          </article>
+          <article class="type-card">
+            <div class="type-number">4</div>
+            <div>
+              <h3>Channel Letter Signs</h3>
+              <p>Three-dimensional individual letters that can be illuminated from within or with halo lighting for a premium, modern appearance.</p>
+            </div>
+          </article>
+          <article class="type-card">
+            <div class="type-number">5</div>
+            <div>
+              <h3>A-Frame & Pavement Signs</h3>
+              <p>Portable sidewalk signs ideal for daily specials, promotions, or temporary messaging outside cafes, salons, and boutique stores.</p>
+            </div>
+          </article>
+          <article class="type-card">
+            <div class="type-number">6</div>
+            <div>
+              <h3>Directional & Wayfinding Signs</h3>
+              <p>Clear, consistent signage that guides customers, deliveries, and staff around larger properties, car parks, and multi-building sites.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Australia -->
+    <section class="why-australia" id="why">
+      <div class="container">
+        <div class="section-header">
+          <h2>Trusted <u><a href="https://neonsnest.com.au/">Business Signs in Australia</a></u></h2>
+          <p>Local expertise, Australian-standard materials, and a deep understanding of regional requirements set our outdoor signage apart.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <h3>Climate-Ready Construction</h3>
+            <p>Materials and coatings specifically chosen for Australian conditions—UV resistance for northern sun and corrosion protection for coastal environments.</p>
+          </article>
+          <article class="why-card">
+            <h3>Council & Compliance Knowledge</h3>
+            <p>We navigate local planning rules, heritage overlays, and size restrictions so your new signage is approved without unnecessary delays.</p>
+          </article>
+          <article class="why-card">
+            <h3>Nationwide Service Network</h3>
+            <p>From capital cities to regional centres, our fabrication and installation teams deliver consistent quality wherever your business is located.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Transform Your Street Presence?</h2>
+          <p>Tell us about your location, brand, and goals. We’ll recommend the most effective outdoor signage solution and provide a clear, no-obligation quote.</p>
+          <a href="mailto:quotes@signcraftaustralia.com.au" class="btn">Request Your Free Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Sign<span>Craft</span> Australia</a>
+          <p>Helping Australian businesses stand out with durable, eye-catching outdoor signage that works as hard as you do.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#types">Sign Types</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#contact">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@signcraftaustralia.com.au">hello@signcraftaustralia.com.au</a></li>
+            <li><a href="tel:+611300000000">1300 000 000</a></li>
+            <li>Serving all Australian states & territories</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SignCraft Australia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
